@@ -388,6 +388,8 @@ class BaseRegridder(object):
             Either give `input_dims` or transpose your input data
             if the horizontal dimensions are not the rightmost two dimensions
 
+            Variables without the regridded dimensions are skipped when passing a Dataset.
+
         keep_attrs : bool, optional
             Keep attributes for xarray DataArrays or Datasets.
             Defaults to False.
